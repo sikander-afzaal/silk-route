@@ -12,7 +12,11 @@ const Header = () => {
           ></div>
         )}
         <header className="contain justify-between items-center h-[90px]">
-          <img src="/logo.png" className="object-contain w-[190px]" alt="" />
+          <img
+            src="/logo.png"
+            className="object-contain w-[170px] md:w-[190px]"
+            alt=""
+          />
           <nav
             className={`flex flex-col md:flex-row z-[90] top-0 w-full md:w-auto max-w-[450px] md:max-w-none h-full md:h-auto justify-start items-center sm:items-start md:items-center gap-8 md:static fixed ${
               headerToggle ? "right-0" : "-right-[800px] "
