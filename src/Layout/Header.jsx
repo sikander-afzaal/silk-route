@@ -1,10 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const [headerToggle, setHeaderToggle] = useState(false);
+  const [bgColor, setBgColor] = useState(false);
+  useEffect(() => {
+    const headerColor = () => {
+      if (window.scrollY > 120) {
+        setBgColor(true);
+      } else {
+        setBgColor(false);
+      }
+    };
+    window.addEventListener("scroll", headerColor);
+
+    return () => {
+      window.removeEventListener("scroll", headerColor);
+    };
+  }, []);
+
   return (
     <>
-      <div className="fixed bg-black z-[60] top-0 left-0 wrapper">
+      <div
+        className={`fixed ${
+          bgColor ? "bg-black" : "bg-transparent"
+        } transition-all duration-500 z-[60] top-0 left-0 wrapper`}
+      >
         {headerToggle && (
           <div
             onClick={() => setHeaderToggle(false)}
