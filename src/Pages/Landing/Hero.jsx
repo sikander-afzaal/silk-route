@@ -53,6 +53,7 @@ const Hero = () => {
     <div className="wrapper min-h-[700px] h-screen">
       <Splide
         options={{
+          autoplay: true,
           fixedHeight: "100vh",
           width: "100%",
           fixedWidth: "100vw",
