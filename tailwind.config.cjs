@@ -14,6 +14,9 @@ module.exports = {
         springGreen: "#39FF14",
         electricPurple: "#5501EE",
       },
+      backgroundImage: {
+        slide2: "url('/slide2.png')",
+      },
       dropShadow: {
         text: "0px 5px 5px rgba(0, 0, 0, 0.56)",
       },

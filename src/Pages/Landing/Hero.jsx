@@ -53,7 +53,7 @@ const Hero = () => {
     <div className="wrapper min-h-[700px] h-screen">
       <Splide
         options={{
-          autoplay: true,
+          // autoplay: true,
           fixedHeight: "100vh",
           width: "100%",
           fixedWidth: "100vw",
@@ -91,12 +91,12 @@ const Hero = () => {
           </SplideSlide>
           <SplideSlide>
             {" "}
-            <div className="w-full relative h-full">
-              <img
+            <div className="w-full relative bg-slide2 bg-cover bg-no-repeat bg-left h-full">
+              {/* <img
                 src="/slide2.png"
-                className="w-full object-cover h-full"
+                className="w-full  object-cover h-full"
                 alt=""
-              />
+              /> */}
               <div className="contain justify-center sm:justify-end absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center">
                 <div className="font-anton  text-[40px] text-center sm:text-left sm:text-[80px] font-normal text-white">
                   <p className="leading-[1.2] drop-shadow-text">
