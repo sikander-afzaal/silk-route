@@ -31,10 +31,10 @@ const Header = () => {
             className="fixed top-0 left-0 w-full h-full bg-black opacity-60 z-[88] md:hidden block"
           ></div>
         )}
-        <header className="contain justify-between items-center h-[100px]">
+        <header className="contain justify-between items-center h-[110px]">
           <img
             src="/logo.png"
-            className="object-contain w-[140px] md:w-[160px]"
+            className="object-contain w-[140px] md:w-[150px]"
             alt=""
           />
           <nav
