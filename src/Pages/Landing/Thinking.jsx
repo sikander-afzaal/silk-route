@@ -5,7 +5,7 @@ const Thinking = () => {
         <h2 className="font-anton sm:mb-5 font-normal text-delayedYellow text-[30px] sm:text-[40px] lg:text-[60px] text-center">
           Thinking of starting anew in the EU?
         </h2>
-        <div className="grid w-full grid-cols-1  lg:grid-cols-2 gap-5 lg:gap-10">
+        <div className="grid w-full max-w-[978px] grid-cols-1  lg:grid-cols-2 gap-5 lg:gap-10">
           <p className="text-lg sm:text-xl font-normal text-white sm:text-left text-center">
             <span className="text-delayedYellow">
               Silk Route is here to help.

@@ -31,14 +31,14 @@ const Header = () => {
             className="fixed top-0 left-0 w-full h-full bg-black opacity-60 z-[88] md:hidden block"
           ></div>
         )}
-        <header className="contain justify-between items-center h-[90px]">
+        <header className="contain justify-between items-center h-[100px]">
           <img
             src="/logo.png"
-            className="object-contain w-[170px] md:w-[190px]"
+            className="object-contain w-[140px] md:w-[160px]"
             alt=""
           />
           <nav
-            className={`flex flex-col md:flex-row z-[90] top-0 w-full md:w-auto max-w-[450px] md:max-w-none h-full md:h-auto justify-start items-center sm:items-start md:items-center gap-8 md:static fixed ${
+            className={`flex flex-col md:flex-row z-[90] top-0 w-full md:w-auto max-w-[450px] md:max-w-none h-full md:h-auto justify-start items-center sm:items-start md:items-center gap-8 lg:gap-[56px] md:static fixed ${
               headerToggle ? "right-0" : "-right-[800px] "
             } md:bg-transparent bg-black pt-[90px] px-[2rem] md:p-0 md:border-none border-l border-solid border-delayedYellow transition-all duration-1000 `}
           >
